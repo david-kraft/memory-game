@@ -24,13 +24,6 @@ class App extends Component {
     }
   }
 
-  removeFriend = id => {
-    // Filter this.state.cards for cards with an id not equal to the id being removed
-    const cards = this.state.cards.filter(friend => friend.id !== id);
-    // Set this.state.cards equal to the new cards array
-    this.setState({ cards });
-  };
-
   handleClicked = (item) => {
     let stateArray= this.state.cards.slice()
   if (!item.clicked) {
